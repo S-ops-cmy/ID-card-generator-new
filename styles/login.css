@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  background-color: whitesmoke;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+#container {
+  width: 500px;
+  margin-top: -5rem;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.login-form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.login-form > * {
+  width: 13rem;
+  padding: 10px 15px;
+  letter-spacing: 1.5px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 3px 3px 2px 1px #4e8397;
+  transition: 0.3s box-shadow, 0.3s transform;
+}
+
+.login-form input:focus {
+  transition: 0.3s box-shadow, 0.3s transform;
+  font-weight: 500;
+  color: #722fdfd9;
+  transform: translate(-2.5px, -2.5px);
+  box-shadow: 5px 5px 3px 1px #7b44d3a4;
+}
+
+.login-form input::placeholder {
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: rgba(63, 63, 63, 0.697);
+}
+
+.login-form > button {
+  margin-top: 1rem;
+  color: whitesmoke;
+  font-weight: 400;
+  background-color: #008e9b;
+  box-shadow: none;
+}
+
+.alert {
+  width: 500px;
+  position: absolute;
+  margin-bottom: 0;
+  bottom: -6rem;
+  left: 0px;
+}

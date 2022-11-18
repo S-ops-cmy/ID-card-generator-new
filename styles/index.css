@@ -1,0 +1,121 @@
+body {
+  background-color: whitesmoke;
+}
+
+.navbar {
+  background-color: #008e9b !important;
+}
+
+.navbar-brand > p {
+  font-weight: 600;
+  color: white;
+  font-family: var(--heading-font);
+}
+
+.logout-form > button {
+  padding: 7px 15px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: 400;
+  background-color: #8f65d3;
+  box-shadow: none;
+}
+
+#container {
+  max-width: 700px;
+  margin-top: 3rem;
+}
+
+.table tbody tr {
+  background-color: white !important;
+  border-left: 10px solid #008e9b;
+}
+.table tbody td {
+  padding: 1rem 0.5rem;
+  background-color: transparent;
+}
+
+.table .list-group-item {
+  padding: 0;
+  background-color: transparent;
+}
+
+.table .list-group-item i {
+  padding: 0 0.5rem;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 410px) {
+  .table .list-group-item i {
+    padding: 0rem;
+  }
+  .table td , .table th , .body{
+    font-size: 14px !important;
+  }
+
+  .head p {
+    font-size: 14px !important;
+  }
+
+  .image img {
+    max-width: 80px !important;
+  }
+
+
+
+}
+
+#container > :first-child {
+  padding-bottom: 0.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 0.3rem ridge #845ec2d8;
+}
+
+/* styles for download card modal */
+.id-card {
+  max-width: 400px;
+  background-color: whitesmoke;
+  border: 1px solid #444;
+  border-radius: 10px;
+}
+
+.head {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1px 0;
+  margin: 1rem 0;
+}
+.head img {
+  width: 50px;
+}
+.head p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.body {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+
+}
+
+.image img {
+  max-width: 100px;
+}
+
+.body .dob {
+  font-size: 10px;
+  text-align: center;
+}
+
+@media print {
+  :not(#downloadCard) {
+    display: none;
+  }
+}
